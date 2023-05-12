@@ -1,0 +1,23 @@
+<button (click) = "changeCounter('minus')" class=”btn btn-primary”> Diminuisci </button>
+<button (click) = "changeCounter('add')" class=”btn btn-primary”> Incrementa </button>
+
+<div [ngSwitch]=”number”>
+	<h1 *ngSwitchCase=”0”> Valore zero </h1>
+	<h1 *ngSwitchCase=”1”> Valore uno </h1>
+	<div *ngSwitchDefault > Default </div>
+</div>
+
+<ng-container *ngIf="values && values.length > 0; else noValues">
+<div *ngIf="" *ngFor="let item of values; index as pippo">
+    <h1 [ngClass]="
+    {'text-success': item === 'Primo'},
+     'text-danger' : :item === 'Secondo"
+     >{{item}} - {{pippo}}</h1>
+</div>
+</ng-container>
+
+<div *ngFor="let item of [0,2,3]; index as i">
+    <div *ngIf="i === 0">
+        <app-hello></app-hello>
+    </div>
+</div>
