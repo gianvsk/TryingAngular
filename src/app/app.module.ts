@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { HelloComponent } from './hello/hello.component';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { ProvaPipe } from './prova.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HelloComponent
+    HelloComponent,
+    ProvaPipe
   ],
   imports: [
     BrowserModule,
